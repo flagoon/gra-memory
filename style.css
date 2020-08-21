@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chelsea Market', cursive;
+    background-color: rgb(192, 198, 214);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    height: 100vh;
+    background-color: rgb(43, 67, 138);
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.info {
+    flex-basis: 25%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(161, 178, 226);
+    border: 4px solid white;
+    margin-right: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 15% 2%;
+    text-transform: uppercase;
+    color: black;
+}
+
+p {
+    font-size: 25px;
+}
+
+.stopwatch {
+    font-size: 50px;
+    font-family: monospace;
+}
+
+button {
+    align-self: center;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 10% 0;
+    padding: 3% 10%;
+    text-transform: uppercase;
+    font-family: 'Chelsea Market', cursive;
+    background-color: white;
+    box-shadow: 0px 8px 7px black;
+    text-shadow: 0 2px 2px rgb(92, 90, 90);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.gameScreen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    height: 80vh;
+    flex-grow: 1;
+    background-color: rgb(43, 67, 138);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameScreen i {
+    display: flex;
+    flex-basis: 18%;
+    height: 22%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(161, 178, 226);
+    background-color: rgb(161, 178, 226);
+    border: 4px solid white;
+
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+i.activeCard {
+    background-color: white;
+    color: black;
+    border: 4px solid rgb(161, 178, 226);
+}
+
+i.hidden {
+    opacity: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+        margin: 20% 2%;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .stopwatch {
+        font-size: 35px;
+    }
+
+    button {
+        margin: 25% 0;
+    }
+
+    .fa {
+        font-size: 65px;
+    }
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 40px;
+        margin: 10% 2%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .stopwatch {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 25px;
+        margin: 10% 0;
+    }
+
+    .fa {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 22px;
+        margin: 15% 2%;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .stopwatch {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        margin: 5% 0;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+
+}
+
+
+
+@media (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: row;
+        align-items: flex-end;
+        position: relative;
+        margin-right: 0;
+        padding-bottom: 2%;
+        width: 100%;
+        height: 10vh;
+    }
+
+    h1 {
+        position: absolute;
+        left: 2%;
+        top: 0;
+        margin: 1%;
+    }
+
+    p {
+        flex-basis: 25%;
+        text-align: end;
+        flex-grow: 1;
+    }
+
+    .stopwatch {
+        flex-basis: 25%;
+        flex-grow: 1;
+        text-align: start;
+        padding-left: 1%;
+    }
+
+    button {
+        align-self: center;
+        flex-basis: 25%;
+        margin: 1% 5%;
+        padding: 2% 6%;
+    }
+
+    .gameScreen {
+        width: 100%;
+        height: 90vh;
+
+    }
+
+
+}
